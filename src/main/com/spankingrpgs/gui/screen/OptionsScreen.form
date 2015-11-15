@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.spankingrpgs.gui.screen.OptionsScreen">
+  <grid id="27dc6" binding="canvas" layout-manager="FormLayout">
+    <rowspec value="center:d:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <colspec value="fill:d:grow"/>
+    <constraints>
+      <xy x="20" y="20" width="1424" height="499"/>
+    </constraints>
+    <properties>
+      <background color="-15395305"/>
+      <font name="Verdana" size="48"/>
+      <foreground color="-2960686"/>
+      <preferredSize width="1920" height="1080"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="98ed1" binding="ai" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="c77c4" class="javax.swing.JLabel" binding="aiLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false">
+                <preferred-size width="960" height="108"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Georgia" size="26"/>
+              <foreground color="-2960686"/>
+              <text value="AI Intelligence"/>
+              <toolTipText value="Controls how smart the enemies are"/>
+            </properties>
+          </component>
+          <grid id="a2c50" binding="aiOptions" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="2" use-parent-layout="false">
+                <preferred-size width="960" height="108"/>
+              </grid>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="5d7af" class="javax.swing.JRadioButton" binding="average">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15395305"/>
+                  <focusable value="false"/>
+                  <font name="Georgia" size="26"/>
+                  <foreground color="-2960686"/>
+                  <selected value="false"/>
+                  <text value="Average"/>
+                  <toolTipText value="Enemies pick actions they are best at, targets at random"/>
+                </properties>
+              </component>
+              <component id="92329" class="javax.swing.JRadioButton" binding="smart">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15395305"/>
+                  <font name="Georgia" size="26"/>
+                  <foreground color="-2960686"/>
+                  <text value="Smart"/>
+                  <toolTipText value="Enemies pick actions they are best at, and targets who will be weakest against them"/>
+                </properties>
+              </component>
+              <component id="6b8a0" class="javax.swing.JRadioButton" binding="dumb">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15395305"/>
+                  <focusPainted value="true"/>
+                  <focusable value="true"/>
+                  <font name="Georgia" size="26"/>
+                  <foreground color="-2960686"/>
+                  <text value="Dumb"/>
+                  <toolTipText value="Enemies pick actions at random"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="1c56b" binding="attritionRate" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="88110" class="javax.swing.JLabel" binding="attritionLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false">
+                <preferred-size width="960" height="108"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Georgia" size="26"/>
+              <foreground color="-2960686"/>
+              <text value="Attrition Rate"/>
+              <toolTipText value="Rate at which heroes/villains lose energy each round"/>
+            </properties>
+          </component>
+          <grid id="5e9f3" binding="attritionOptions" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="2" use-parent-layout="false">
+                <preferred-size width="960" height="108"/>
+              </grid>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="634cd" class="javax.swing.JRadioButton" binding="moderate">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15395305"/>
+                  <font size="26"/>
+                  <foreground color="-2960686"/>
+                  <text value="Moderate"/>
+                  <toolTipText value="Superheroes/villains lose some energy each round"/>
+                </properties>
+              </component>
+              <component id="9ccdb" class="javax.swing.JRadioButton" binding="severe">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15395305"/>
+                  <font size="26"/>
+                  <foreground color="-2960686"/>
+                  <text value="Severe"/>
+                  <toolTipText value="Heroes lose more energy each round, villains less"/>
+                </properties>
+              </component>
+              <component id="a9541" class="javax.swing.JRadioButton" binding="none">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15395305"/>
+                  <focusPainted value="true"/>
+                  <focusable value="true"/>
+                  <font size="26"/>
+                  <foreground color="-2960686"/>
+                  <text value="None"/>
+                  <toolTipText value="Heroes lose no energy each round, villains lose a lot"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="93312" binding="enemiesCanSpank" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="90a1b" class="javax.swing.JLabel" binding="enemiesCanSpankLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false">
+                <preferred-size width="960" height="108"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Georgia" size="26"/>
+              <foreground color="-2960686"/>
+              <requestFocusEnabled value="false"/>
+              <text value="Can enemies spank in battle?"/>
+              <toolTipText value="Decide whether enemies can spank you in battle"/>
+            </properties>
+          </component>
+          <grid id="f40a3" binding="enemiesCanSpankChoices" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="2" use-parent-layout="false">
+                <preferred-size width="960" height="108"/>
+              </grid>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="6c540" class="javax.swing.JRadioButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15395305"/>
+                  <font size="26"/>
+                  <foreground color="-2960686"/>
+                  <text value="No"/>
+                  <toolTipText value="Enemies will not try to spank you in battle"/>
+                </properties>
+              </component>
+              <component id="22437" class="javax.swing.JRadioButton">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15395305"/>
+                  <focusPainted value="true"/>
+                  <focusable value="true"/>
+                  <font size="26"/>
+                  <foreground color="-2960686"/>
+                  <text value="Yes"/>
+                  <toolTipText value="Enemies will try to spank you in battle"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <component id="a6c78" class="javax.swing.JLabel" binding="title">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <font name="Verdana" size="48"/>
+          <foreground color="-2960686"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <maximumSize width="-1" height="-1"/>
+          <preferredSize width="1920" height="108"/>
+          <text value="Options"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="aiIntelligenceGroup">
+      <member id="5d7af"/>
+      <member id="92329"/>
+      <member id="6b8a0"/>
+    </group>
+    <group name="attritionGroup">
+      <member id="634cd"/>
+      <member id="9ccdb"/>
+      <member id="a9541"/>
+    </group>
+    <group name="canEnemiesSpankGroup">
+      <member id="6c540"/>
+      <member id="22437"/>
+    </group>
+  </buttonGroups>
+</form>
