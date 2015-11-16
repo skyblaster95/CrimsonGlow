@@ -15,7 +15,7 @@
  *      You should have received a copy of the GNU General Public License
  *      along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.spankingrpgs.crimsonglow;
+package com.spankingrpgs.crimsonglow.appearance;
 
 import com.spankingrpgs.model.characters.AppearanceElement;
 import com.spankingrpgs.util.ListUtils;
@@ -24,30 +24,29 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Enumeration of possible eye color.
+ * Skin colors available in Crimson Glow.
  */
-public enum EyeColor implements AppearanceElement {
-    BLUE("blue"),
-    BROWN("brown"),
-    GREEN("green"),
-    HAZEL("hazel"),
-    GREY("grey");
+public enum SkinColor implements AppearanceElement {
+    PALE("pale"),
+    PEACH("peach"),
+    TANNED("tanned"),
+    SANDY("sandy"),
+    CARAMEL("caramel"),
+    BLACK("black");
 
     private final List<String> adjectives;
 
-    EyeColor(String... adjectives) {
+    SkinColor(String... adjectives) {
         this.adjectives = Arrays.asList(adjectives);
     }
-
     @Override
     public String getLowerCaseName() {
-        return name().toLowerCase();
+       return name().toLowerCase();
     }
 
     @Override
     public String generateAdjective() {
         return ListUtils.choice(adjectives);
     }
-
 
 }
