@@ -34,6 +34,7 @@ public enum BodyType implements AppearanceElement {
     HEAVYSET("fleshy", "wide", "expansive", "corpulent", "sizeable", "generous", "bulbous");
 
     private List<String> adjectives;
+    
     private final Random generator;
 
 
@@ -41,6 +42,7 @@ public enum BodyType implements AppearanceElement {
        this.adjectives =  Arrays.asList(adjectives);
        generator = new Random();
     }
+    
     @Override
     public String getLowerCaseName() {
         return name().toLowerCase();
