@@ -44,7 +44,7 @@ public enum BodyType implements AppearanceElement {
     @Override
     public String getLowerCaseName() {
         return name().toLowerCase();
-      }
+    }
       
     @Override
     public String generateAdjective() {
