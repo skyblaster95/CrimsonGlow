@@ -40,7 +40,7 @@ public enum BodyType implements AppearanceElement {
     BodyType(String... adjectives){
        this.adjectives =  Arrays.asList(adjectives);
        generator = new Random();
-   }
+    }
     @Override
     public String getLowerCaseName() {
         return name().toLowerCase();
@@ -50,4 +50,4 @@ public enum BodyType implements AppearanceElement {
     public String generateAdjective() {
         return ListUtils.choice(adjectives);
     }
-  }
+}
